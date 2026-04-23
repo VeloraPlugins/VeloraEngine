@@ -18,3 +18,9 @@ Its purpose is to reduce duplicated code between plugins and provide a clean, co
 - VeloraEngine is a dependency/library project for other Velora plugins
 - It is not designed to be a standalone gameplay plugin
 - Server owners should only install it when required by another Velora plugin
+
+## Support
+
+For support, questions, or bug reports, please open an issue in this repository or join our Discord support server.
+
+**Discord:** https://discord.gg/UEW3AJnMqx
