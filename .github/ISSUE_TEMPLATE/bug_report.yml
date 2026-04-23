@@ -1,0 +1,107 @@
+name: Bug Report
+description: Report a bug with VeloraEngine
+title: "[Bug]: "
+labels: ["bug: unconfirmed"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+
+        Before submitting:
+        1. Make sure you are using the latest version of VeloraEngine.
+        2. Make sure the issue has not already been reported.
+        3. Please report only **one bug per issue**.
+        4. Do not use temporary Discord media links.
+
+  - type: input
+    id: engine_version
+    attributes:
+      label: VeloraEngine version
+      placeholder: "e.g. 1.0.10"
+    validations:
+      required: true
+
+  - type: input
+    id: dependent_plugin
+    attributes:
+      label: Plugin using VeloraEngine
+      placeholder: "e.g. VeloraSafeTeleport"
+    validations:
+      required: false
+
+  - type: input
+    id: server_version
+    attributes:
+      label: Server version
+      placeholder: "e.g. Paper 1.21.1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Describe the bug
+      description: Describe the issue in as much detail as possible.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: How to reproduce
+      description: Please provide clear step-by-step instructions.
+      value: |
+        1.
+        2.
+        3.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: Expected behavior
+      description: Explain what should have happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / stacktrace
+      description: Paste any relevant errors, stacktraces, or console output.
+      render: text
+    validations:
+      required: false
+
+  - type: input
+    id: log_link
+    attributes:
+      label: Log link
+      description: Upload logs to mclo.gs, mcpaste.io, or another paste service.
+      placeholder: "e.g. https://mclo.gs/abcdefg"
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra_context
+    attributes:
+      label: Additional context
+      description: Add any extra context, screenshots, or notes here.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Confirmations
+      options:
+        - label: I am using the latest available version of VeloraEngine
+          required: true
+        - label: I have checked that this issue has not already been reported
+          required: true
+        - label: I only included one bug in this report
+          required: true
+        - label: I did not use temporary Discord media links
+          required: true
